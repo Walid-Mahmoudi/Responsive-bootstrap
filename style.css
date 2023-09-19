@@ -1,0 +1,136 @@
+:root{
+    --darkcolor: #19283f;
+    --greencolor: #33d1cc;
+    --redcolor: #ff3150;
+    --yellowcolor: #ffc400;
+    --sectionclor: #eff7fa;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+}
+.main-btn{
+    background-color: var(--redcolor);
+    color: var(--yellowcolor);
+    padding: 0.5rem 1rem;
+}
+.maintitle::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--greencolor);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+/*  */
+}
+.navbar{
+    background-color: var(--darkcolor);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--greencolor);
+}
+.navbar .search{
+    border-left: 1px solid var(--greencolor);
+}
+.navbar .search i{
+    color: var(--greencolor);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    scale: 1.1;
+}
+.leading{
+    background: var(--darkcolor);
+    min-height: calc(100vh - 72px);
+}
+.maintitle i{
+    font-size: 50px;
+    color: var(--yellowcolor);
+}
+
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--sectionclor);
+}
+.features .icon-holder .icon{
+    color: var(--greencolor);
+}
+.features .feat h4{
+    color: var(--yellowcolor);
+}
+.our-work{
+    background-color: var(--sectionclor);
+}
+.our-work ul .active{
+    background-color: var(--redcolor);
+    color: var(--yellowcolor);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--redcolor);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(52 209 204 / 50%);
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover:before{
+    transform: translateX(0);
+}
+.stuff .descreption {
+    width: 300px;
+}
+.our-team{
+    background-color: var(--sectionclor);
+}
+.our-team h2{
+    color: var(--yellowcolor);
+}
+.our-team h4{
+    background-color: var(--greencolor);
+}
+.our-team .pho{
+    width: 100%;
+}
+.project{
+    background-color: var(--darkcolor);
+}
